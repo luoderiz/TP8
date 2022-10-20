@@ -33,17 +33,17 @@
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.avd>Pixel4API30</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Users\\\\milui\\\\Documents\\\\Crowdar\\\\Clase12\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
-                <crowdar.deviceName>Pixel4API30</crowdar.deviceName>
+                <crowdar.avd>Pixel3API30</crowdar.avd>
+                <crowdar.appLocation>C:\\\\Users\\\\milui\\\\Documents\\\\Crowdar\\\\TP8\\\\sample_apk\\\\clockify.apk</crowdar.appLocation>
+                <crowdar.deviceName>Pixel3API30</crowdar.deviceName>
             </properties>
         </profile>
         <profile>
             <id>StackLocal</id>
             <properties>
                 <crowdar.driverHub>http://localhost:4444/wd/hub</crowdar.driverHub>
-                <crowdar.avd>samsung_galaxy_s7_9.0</crowdar.avd>
-                <crowdar.appLocation>/root/tmp/sample_apk/lippia.apk</crowdar.appLocation>
+                <crowdar.avd>Pixel3API30</crowdar.avd>
+                <crowdar.appLocation>/root/tmp/sample_apk/clockify.apk</crowdar.appLocation>
                 <crowdar.deviceName>Android Emulator</crowdar.deviceName>
             </properties>
         </profile>
@@ -66,7 +66,7 @@
             <id>BrowserStack</id>
             <properties>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.deviceName>Pixel4API30</crowdar.deviceName>
+                <crowdar.deviceName>Pixel3API30</crowdar.deviceName>
                 <crowdar.os.version>9.0</crowdar.os.version>
                 <crowdar.appLocation>bs://7e498849c478c31cba239bb5edcd0a73cd3c3fed</crowdar.appLocation>
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/browserStackCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
