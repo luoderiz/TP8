@@ -8,5 +8,5 @@ Feature: I want to use Clockify with my mobile device
 
     @Demo
     Examples:
-    |email                   |   password        |
-    |lu.oderiz@gmail.com     |   ?2AXeS*h&d6N    |
+    |email                            |   password        |
+    |kthvhdmxncseqxpfng@tmmbt.com     |   Ye#o!*tri40g    |

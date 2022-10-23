@@ -17,7 +17,8 @@ public class AddTimeEntrySteps {
 
     @And("The user selects the date by month (.*) and day (.*)")
     public void selectDate(String month, String day) {
-        AddTimeEntryService.enterDate();
+        MobileActionManager.click(AddTimeEntryConstants.START_DATE_BUTTON);
+        AddTimeEntryService.enterDate(month, day);
     }
 
     @And("The user picks the starting time by hour (.*) and minutes (.*)")
@@ -38,14 +39,16 @@ public class AddTimeEntrySteps {
 
     @And("The user chooses the Project (.*)")
     public void chooseProject(String project) {
-        MobileActionManager.click(AddTimeEntryConstants.SELECT_PROJECT);
-        MobileActionManager.click(AddTimeEntryConstants.CHOOSE_PROYECTO_UNO);
+        MobileActionManager.click(AddTimeEntryConstants.SET_PROJECT_BUTTON);
+        String chosenProject = AddTimeEntryService.formatLocatorWithValue(AddTimeEntryConstants.CHOOSE_SPECIFIC_PROJECT, project);
+        MobileActionManager.click(chosenProject);
     }
 
     @And("The user selects the Task (.*)")
     public void selectTask(String task) {
-        MobileActionManager.click(AddTimeEntryConstants.SELECT_TASK);
-        MobileActionManager.click(AddTimeEntryConstants.CHOOSE_AUTOMATIZAR_NOTIFICACIONES);
+        MobileActionManager.click(AddTimeEntryConstants.SET_TASK_BUTTON);
+        String chosenTask = AddTimeEntryService.formatLocatorWithValue(AddTimeEntryConstants.CHOOSE_SPECIFIC_TASK, task);
+        MobileActionManager.click(chosenTask);
     }
 
     @And("The user saves the changes on the new entry")
