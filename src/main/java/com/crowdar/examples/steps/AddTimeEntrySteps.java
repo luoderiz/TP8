@@ -34,7 +34,7 @@ public class AddTimeEntrySteps {
 
     @And("The user enters the description (.*)")
     public void enterDescription(String description) {
-        MobileActionManager.setInput(AddTimeEntryConstants.ENTER_DESCRIPTION, description);
+        MobileActionManager.setInput(AddTimeEntryConstants.ENTER_DESCRIPTION, description, true, false);
     }
 
     @And("The user chooses the Project (.*)")
@@ -54,8 +54,8 @@ public class AddTimeEntrySteps {
         ActionManager.click(AddTimeEntryConstants.SAVE_BUTTON);
     }
 
-    @Then("The new Time entry '(.*)' can be seen in the User Home Page")
-    public void isEntrySaved(String entryReference) {
-        AddTimeEntryService.isEntrySaved(entryReference);
+    @Then("The new Time entry can be identified in User Home Page month (.*), day (.*) and description (.*)")
+    public void verifyEntryAddition(String month, String day, String description) {
+        AddTimeEntryService.isEntrySaved(month, day, description);
     }
 }

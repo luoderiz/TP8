@@ -36,6 +36,7 @@ public class AddTimeEntryConstants {
 
     public static final String SAVE_BUTTON = "xpath://android.widget.Button[@text='SAVE']";
 
-    public static final String TIME_ENTRY = "xpath://android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[@text='%s']";
+    public static final String PUBLISHED_TIME_ENTRY_DATE = "xpath://android.widget.TextView[contains(@text, '%s')]";
 
+    public static final String PUBLISHED_TIME_ENTRY_DESCRIPTION = "xpath://android.widget.TextView[contains(@text, '%s')]";
 }

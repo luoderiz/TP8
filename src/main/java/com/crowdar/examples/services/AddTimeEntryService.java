@@ -46,10 +46,12 @@ public class AddTimeEntryService {
         ActionManager.click(chosenTask);
     }
 
-    public static void isEntrySaved(String description) {
+    public static void isEntrySaved(String month, String day, String description) {
         ActionManager.waitVisibility(LoginConstants.TOOLBAR);
-        String addedTimeEntry = String.format(AddTimeEntryConstants.TIME_ENTRY, description);
-        Assert.assertTrue(ActionManager.isVisible(addedTimeEntry), "Failed to display the new entry");
+        String addedDate = day + ' ' + month;
+        String addedTimeEntryByDate = String.format(AddTimeEntryConstants.PUBLISHED_TIME_ENTRY_DATE, addedDate);
+        String addedTimeEntryByDescription = String.format(AddTimeEntryConstants.PUBLISHED_TIME_ENTRY_DESCRIPTION, description);
+        Assert.assertTrue(ActionManager.isVisible(addedTimeEntryByDate), "Failed to locate the new entry's date");
+        Assert.assertTrue(ActionManager.isVisible(addedTimeEntryByDescription), "Failed to locate the new entry's description");
     }
-
 }
