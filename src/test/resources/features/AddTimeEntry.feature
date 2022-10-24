@@ -14,4 +14,4 @@ Feature: I want to add a Time Entry to Clockify from my mobile device
     And The user chooses the Project Realismo magico latinoamericano
     And The user selects the Task Lectura de novela
     And The user saves the changes on the new entry
-    Then The new Time entry can be identified in User Home Page by month 'Nov', day '12' and description 'Cien años de soledad'
+    Then The new Time entry can be identified in User Home Page by month Nov, day 12 and description Cien años de soledad

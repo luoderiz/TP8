@@ -54,7 +54,7 @@ public class AddTimeEntrySteps {
         ActionManager.click(AddTimeEntryConstants.SAVE_BUTTON);
     }
 
-    @Then("The new Time entry can be identified in User Home Page month (.*), day (.*) and description (.*)")
+    @Then("The new Time entry can be identified in User Home Page by month (.*), day (.*) and description (.*)")
     public void verifyEntryAddition(String month, String day, String description) {
         AddTimeEntryService.isEntrySaved(month, day, description);
     }

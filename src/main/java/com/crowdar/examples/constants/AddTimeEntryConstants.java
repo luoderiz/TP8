@@ -38,5 +38,5 @@ public class AddTimeEntryConstants {
 
     public static final String PUBLISHED_TIME_ENTRY_DATE = "xpath://android.widget.TextView[contains(@text, '%s')]";
 
-    public static final String PUBLISHED_TIME_ENTRY_DESCRIPTION = "xpath://android.widget.TextView[contains(@text, '%s')]";
+    public static final String PUBLISHED_TIME_ENTRY_DESCRIPTION = "xpath://android.widget.TextView[@text='%s']";
 }
